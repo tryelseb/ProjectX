@@ -15,7 +15,7 @@
 }
 .slider {
     min-height: 400px;
-    background-image: url(https://eldritch.qodeinteractive.com/wp-content/uploads/2017/06/shop-slider-image-2.jpg);
+    background-image: url(//eldritch.qodeinteractive.com/wp-content/uploads/2017/06/shop-slider-image-1-1.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,6 +68,15 @@
     background-size: cover;
     background-position: 50% 0%;
     background-repeat: no-repeat;
+    position: relative;
+    .wrp-title {
+        margin-bottom: (.9375rem * 2);
+        & > * {
+            font: 500 pr(40)/1.6 $main-font-family;
+            color: $white-color;
+            text-transform: uppercase;
+        }
+    }
     &__name {
         position: relative;
         padding-bottom: 31px;
@@ -87,6 +96,7 @@
         border-width: 3px 2px;
         border-style: solid;
         border-color: rgba(207,201,166,.4);
+        background-color: black;
         display: block;
         overflow: hidden;
         position: relative;
@@ -109,13 +119,13 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            font: 400 pr(28)/1 $second-font-family;
+            font: 300 pr(35)/1 $second-font-family;
             z-index: 1;
             letter-spacing: 1px;
             transition: all .2s ease-out;
             text-transform: uppercase;
             &:nth-child(2) {
-                top: 65%;
+                top: 70%;
                 font-size: pr(16);
             }
         }
@@ -165,7 +175,7 @@
 .block {
     padding: 3vw .9375rem;
     padding: (.9375rem * 2) .9375rem;
-    background-image: url("https://eldritch.qodeinteractive.com/wp-content/uploads/2017/06/portfolio-image-5.jpg");
+    background-image: url("https://eldritch.qodeinteractive.com/wp-content/uploads/2017/06/shop-slider-image-2.jpg");
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -222,5 +232,34 @@
             font: 400 pr(20)/1.4 $main-font-family;
             color: $white-color;
         }
+    }
+}
+.filter {
+    width: 25px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    li {
+        padding: .2em;
+        background-color: rgba(#272727, .5);
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+        &:not(:first-child):hover {
+            & a {
+                font-size: 15px;
+                color: black;
+                font-family: Neucha,cursive;
+            }
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-family: $main-font-family;
+        font-size: 14px;
+        display: block;
+        
     }
 }
