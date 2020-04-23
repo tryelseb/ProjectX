@@ -247,10 +247,10 @@
         &:not(:last-child) {
             margin-bottom: 2px;
         }
-        &:not(:first-child):hover {
+        &:hover {
             & a {
-                font-size: 15px;
-                color: black;
+                font-size: 16px;
+                color: #801f32;
                 font-family: Neucha,cursive;
             }
         }
